@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/home"
-        android:icon="@drawable/baseline_home_24"
+        android:icon="@drawable/ic_home"
         android:title="Home"
         />
     <item
         android:id="@+id/account"
-        android:icon="@drawable/baseline_account_circle_24"
+        android:icon="@drawable/ic_account"
         android:title="Profile"
         />
 </menu>
