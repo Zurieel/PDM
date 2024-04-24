@@ -8,30 +8,39 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/mis_compras"
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_mis_compras"
             android:icon="@drawable/ic_shopping"
             android:title="Mis compras" />
 
         <item
-            android:id="@+id/favoritos"
+            android:id="@+id/nav_favoritos"
             android:icon="@drawable/ic_favorite"
             android:title="Favoritos" />
 
         <item
-            android:id="@+id/ofertas"
+            android:id="@+id/nav_ofertas"
             android:icon="@drawable/ic_offer"
             android:title="Ofertas" />
+
+        <item
+            android:id="@+id/nav_mi_cuenta"
+            android:icon="@drawable/ic_account"
+            android:title="Mi cuenta" />
+
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Cerrar sesión" />
+            </menu>
+        </item>
+
     </group>
-
-    <item
-        android:title="">
-
-        <menu>
-            <item
-                android:id="@+id/logout"
-                android:icon="@drawable/ic_logout"
-                android:title="Cerrar sesión" />
-        </menu>
-    </item>
 
 </menu>

@@ -1,14 +1,22 @@
 <resources>
     <string name="app_name">Lucky Aide</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="username_nav">Nombre de usuario</string>
 
-    <string name="Correo">Correo Electrónico</string>
-    <string name="Contraseña">Contraseña</string>
-    <string name="Nombre">Nombre</string>
-    <string name="Apellidos">Apellidos</string>
+    <string name="correo">Correo Electrónico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
 
+    <string name="p1_no_cuenta">¿No tienes una cuenta?</string>
+    <string name="p1_registrarse">Registrate aquí</string>
+    <string name="p2_Registro">Registrarse</string>
 
-    <string name="P1NoCuenta">¿No tienes una cuenta?</string>
-    <string name="P1Registrarse">Registrate aquí</string>
+    <string name="fragment_inicio">Inicio</string>
+    <string name="fragment_mis_compras">Mis Compras</string>
+    <string name="fragment_favoritos">Favoritos</string>
+    <string name="fragment_ofertas">Ofertas</string>
+    <string name="fragment_mi_cuenta">Mi Cuenta</string>
 
-    <string name="P2Registro">Registrarse</string>
 </resources>
