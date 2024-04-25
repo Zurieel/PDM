@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".Register">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +22,6 @@
                 android:layout_height="245dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                android:tint="@color/green"
                 app:srcCompat="@drawable/ic_account" />
 
             <TextView
@@ -30,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/p2_Registro"
+                android:text="@string/register"
                 android:textColor="@color/purple"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -44,7 +43,7 @@
                 android:background="@drawable/custom_input"
                 android:drawablePadding="12dp"
                 android:ems="10"
-                android:hint="@string/nombre"
+                android:hint="@string/name"
                 android:inputType="text"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
@@ -60,7 +59,7 @@
                 android:background="@drawable/custom_input"
                 android:drawablePadding="12dp"
                 android:ems="10"
-                android:hint="@string/apellidos"
+                android:hint="@string/last_name"
                 android:inputType="text"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
@@ -76,7 +75,7 @@
                 android:background="@drawable/custom_input"
                 android:drawablePadding="12dp"
                 android:ems="10"
-                android:hint="@string/correo"
+                android:hint="@string/email"
                 android:inputType="text"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
@@ -92,7 +91,7 @@
                 android:background="@drawable/custom_input"
                 android:drawablePadding="12dp"
                 android:ems="10"
-                android:hint="@string/contraseña"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"

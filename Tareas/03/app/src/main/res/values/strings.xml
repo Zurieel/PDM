@@ -2,21 +2,26 @@
     <string name="app_name">Lucky Aide</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
-    <string name="username_nav">Nombre de usuario</string>
 
-    <string name="correo">Correo Electrónico</string>
-    <string name="contraseña">Contraseña</string>
-    <string name="nombre">Nombre</string>
-    <string name="apellidos">Apellidos</string>
+    <string name="account_name">Nombre</string>
+    <string name="account_last_name">Apellido</string>
+    <string name="account_email">Correo</string>
 
-    <string name="p1_no_cuenta">¿No tienes una cuenta?</string>
-    <string name="p1_registrarse">Registrate aquí</string>
-    <string name="p2_Registro">Registrarse</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellidos</string>
 
-    <string name="fragment_inicio">Inicio</string>
-    <string name="fragment_mis_compras">Mis Compras</string>
-    <string name="fragment_favoritos">Favoritos</string>
-    <string name="fragment_ofertas">Ofertas</string>
-    <string name="fragment_mi_cuenta">Mi Cuenta</string>
+    <string name="login_no_account">¿No tienes una cuenta?</string>
+    <string name="login_register">Registrate aquí</string>
+    <string name="register">Registrarse</string>
+
+    <string name="fragment_home">Inicio</string>
+    <string name="fragment_shopping">Mis Compras</string>
+    <string name="fragment_favorites">Favoritos</string>
+    <string name="fragment_offers">Ofertas</string>
+    <string name="fragment_account">Mi Cuenta</string>
+    <string name="fragment_cart">Carrito</string>
+    <string name="fragment_settings">Configuración</string>
 
 </resources>

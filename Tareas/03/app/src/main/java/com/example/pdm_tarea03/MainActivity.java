@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         register.setOnClickListener(view -> {
-            intent = new Intent(this, Registro.class);
+            intent = new Intent(this, Register.class);
             startActivity(intent);
         });
 

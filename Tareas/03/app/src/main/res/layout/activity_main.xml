@@ -35,7 +35,7 @@
                 android:drawableStart="@drawable/custom_email_icon"
                 android:drawablePadding="12dp"
                 android:ems="10"
-                android:hint="@string/correo"
+                android:hint="@string/email"
                 android:inputType="text|textEmailAddress"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
@@ -53,7 +53,7 @@
                 android:background="@drawable/custom_input"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
-                android:hint="@string/contraseña"
+                android:hint="@string/password"
                 android:textSize="13sp"
                 android:textColor="@color/purple"
                 android:ems="10"
@@ -75,14 +75,14 @@
                 android:layout_height="29dp"
                 android:layout_marginTop="40dp"
                 android:layout_gravity="center"
-                android:text="@string/p1_no_cuenta" />
+                android:text="@string/login_no_account" />
 
             <TextView
                 android:id="@+id/textViewRegistro"
                 android:layout_width="108dp"
                 android:layout_height="31dp"
                 android:layout_gravity="center"
-                android:text="@string/p1_registrarse"
+                android:text="@string/login_register"
                 android:textColor="@color/purple"
                 android:textStyle="bold" />
 

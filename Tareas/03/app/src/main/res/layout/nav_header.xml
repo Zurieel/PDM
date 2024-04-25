@@ -30,7 +30,7 @@
         android:layout_marginTop="41dp"
         android:layout_marginLeft="5dp"
         android:gravity="center_vertical"
-        android:text="@string/username_nav"
+        android:text="@string/account_name"
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintStart_toEndOf="@+id/imageView3"

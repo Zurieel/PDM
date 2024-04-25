@@ -12,7 +12,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
+
 import com.google.android.material.navigation.NavigationView;
 
 public class Principal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -37,9 +39,27 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
         navigationView.setNavigationItemSelectedListener(this);
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new FragmentInicio()).commit();
-            navigationView.setCheckedItem(R.id.nav_inicio);
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new FragmentHome()).commit();
+            navigationView.setCheckedItem(R.id.nav_home);
         }
+
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                if (menuItem.getItemId() == R.id.cart) {
+                    replaceFragment(new FragmentCart());
+                    return true;
+                } else if (menuItem.getItemId() == R.id.account) {
+                    replaceFragment(new FragmentAccount());
+                    return true;
+                } else if (menuItem.getItemId() == R.id.settings) {
+                    replaceFragment(new FragmentSettings());
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
 
     }
 
@@ -48,16 +68,14 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_inicio) {
-            replaceFragment(new FragmentInicio());
-        } else if (id == R.id.nav_mis_compras) {
-            replaceFragment(new FragmentMisCompras());
-        } else if (id == R.id.nav_favoritos) {
-            replaceFragment(new FragmentFavoritos());
-        } else if (id == R.id.nav_ofertas) {
-            replaceFragment(new FragmentOfertas());
-        } else if (id == R.id.nav_mi_cuenta) {
-            replaceFragment(new FragmentMiCuenta());
+        if (id == R.id.nav_home) {
+            replaceFragment(new FragmentHome());
+        } else if (id == R.id.nav_shopping) {
+            replaceFragment(new FragmentShopping());
+        } else if (id == R.id.nav_favorites) {
+            replaceFragment(new FragmentFavorites());
+        } else if (id == R.id.nav_offers) {
+            replaceFragment(new FragmentOffers());
         } else if (id == R.id.nav_logout) {
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
@@ -67,11 +85,17 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
         return true;
     }
 
-    private void replaceFragment(Fragment fragment){
+    private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return true;
     }
 
 }

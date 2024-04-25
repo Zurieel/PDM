@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentMisCompras">
+    tools:context=".FragmentFavorites">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/fragment_mis_compras"
+        android:text="@string/fragment_favorites"
         android:textColor="@color/grey"
         android:textSize="30sp"/>
 

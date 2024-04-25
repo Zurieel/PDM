@@ -25,10 +25,12 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             />
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/frame_layout"/>
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -40,6 +42,9 @@
         app:menu="@menu/nav_menu"
         app:itemIconTint="@color/green"
         app:itemTextColor="@color/purple"/>
+
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
